@@ -1,0 +1,19 @@
+{
+  "name": "my-fanfic-lybrary-hooks-ver",
+  "version": "1.0.0",
+  "homepage": "http://www.myfanficslibrary.com/",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fix-memory-limit": "cross-env LIMIT=8192 increase-memory-limit",
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "start": "concurrently --kill-others-on-fail  \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
