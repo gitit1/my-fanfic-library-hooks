@@ -1,0 +1,23 @@
+@import "../../../../style/_varibles.scss";
+
+.Header {
+    flex-grow: 1;
+    &__Container {
+        color: #000000 !important;
+        background-color: #ffffff !important;
+        position: static !important;
+
+        &--Toolbar {
+            display: flex;
+            justify-content: space-between;
+
+            &__section {
+                display: flex;
+                align-items: center;
+            }
+        }
+        &--Hamburger {
+            margin-right: 16px;
+        }
+    }
+}
