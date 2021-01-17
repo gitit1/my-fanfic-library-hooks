@@ -1,7 +1,9 @@
-@import "../../../../style/_varibles.scss";
+@import '../../../../style/_sizes.scss';
 
 .Header {
+    height: $header_size;
     flex-grow: 1;
+
     &__Container {
         color: #000000 !important;
         background-color: #ffffff !important;

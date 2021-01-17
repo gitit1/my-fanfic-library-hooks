@@ -11,6 +11,7 @@ import LeftIcons from './components/LeftIcons';
 
 import './Header.scss';
 
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     MobileNav: {
@@ -49,13 +50,13 @@ const NAV_ITEMS = [
   }
 ]
 
-const Header = () => {
+const Header= () => {
   const classes = useStyles();
   const [isNavDrawerOpen, setIsNavDrawerOpen] = useState(false);
 
   const drawerHandler = () => {setIsNavDrawerOpen(!isNavDrawerOpen)}
   return (
-    <div className='Header'>
+    <div className="Header">
       <AppBar className="Header__Container">
         <Toolbar className="Header__Container--Toolbar">
           <div className="Header__Container--Toolbar__section">

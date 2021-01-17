@@ -1,4 +1,19 @@
+@import "./_fonts.scss";
+@import "./_colors.scss";
+@import "./_varibles.scss";
+
 * {
     margin: 0;
     text-decoration: none;
+}
+
+body{
+    font-family: 'Arimo-Regular';
+    color: $text-grey;
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'SF-Pro-Display-Bold';
+        color: $text-blue;
+        @include header;
+    }
+
 }

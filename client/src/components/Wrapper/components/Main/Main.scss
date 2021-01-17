@@ -1,0 +1,9 @@
+@import '../../../../style/_sizes.scss';
+
+.Main {
+    height: $main_size;
+    background-color: aqua;
+    background: url('../../../../assets/main-section.png');
+    background-repeat: no-repeat;
+    background-size: 100% #{$main_top_size};
+}

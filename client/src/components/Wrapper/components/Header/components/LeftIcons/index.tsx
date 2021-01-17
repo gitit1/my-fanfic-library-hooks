@@ -1,4 +1,4 @@
-import React, { ClassType } from 'react';
+import React from 'react';
 
 import { IconButton, Badge } from '@material-ui/core';
 import AccountCircle from '@material-ui/icons/AccountCircle';

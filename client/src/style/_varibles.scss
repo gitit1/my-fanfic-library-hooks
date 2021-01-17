@@ -1,0 +1,7 @@
+@import "./_fonts.scss";
+@import "./_colors.scss";
+
+@mixin header{
+    font-family: 'SF-Pro-Display-Bold';
+    color: $text-blue;
+}

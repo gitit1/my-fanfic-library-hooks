@@ -1,0 +1,6 @@
+// Wrapper:
+$header_size: 64px;
+$footer: 110px;
+
+$main_size: calc(100vh - #{$header_size} - #{$footer});
+$main_top_size: 400px;

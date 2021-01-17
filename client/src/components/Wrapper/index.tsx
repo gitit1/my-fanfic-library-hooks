@@ -1,13 +1,17 @@
 import React from 'react';
+
 import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 const Wrapper = (props: any) => {
 
     return(
-        <div>
+        <div className="Wrapper">
             <Header />
-            <div>{props.children}</div>
-            <footer>footer</footer>
+            <Main children={props.children} />
+            <Footer />
+            
         </div>
     )
 }
