@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "http://www.myfanficslibrary.com/",
   "description": "",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "fix-memory-limit": "cross-env LIMIT=8192 increase-memory-limit",
     "client": "cd client && npm start",
