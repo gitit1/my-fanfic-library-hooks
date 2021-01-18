@@ -13,8 +13,8 @@ import Damie from '../../../../assets/index-fandoms-carousel/damie.jpeg';
 import Avalance from '../../../../assets/index-fandoms-carousel/avalance.jpg';
 import Deanoru from '../../../../assets/index-fandoms-carousel/deanoru.jpeg';
 import Marina from '../../../../assets/index-fandoms-carousel/marina.jpg';
-import EmmaAndAlyssa  from '../../../../assets/index-fandoms-carousel/emmaAndalyssa.jpg';
-import Crisabel  from '../../../../assets/index-fandoms-carousel/crisabel.jpg';
+import EmmaAndAlyssa from '../../../../assets/index-fandoms-carousel/emmaAndalyssa.jpg';
+import Crisabel from '../../../../assets/index-fandoms-carousel/crisabel.jpg';
 
 const FANDOMS_ARRAY = [
     {
@@ -83,15 +83,47 @@ const FANDOMS_ARRAY = [
         world: 'Tierra de Lobbos',
         src: Crisabel
     }
-].sort( () => Math.random() - 0.5);
+].sort(() => Math.random() - 0.5);
 const RANDOM_COLOR_ARRAY = ['purple', 'blue', 'green', 'yellow', 'orange', 'red']
 
 const settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 1500,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 };
 
 const LastSection = () => {
