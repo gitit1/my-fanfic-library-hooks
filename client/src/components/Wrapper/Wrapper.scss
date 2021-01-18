@@ -1,0 +1,60 @@
+@import "../../style/sizes";
+
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .Header {
+
+        &__Container {
+            color: #000000 !important;
+            background-color: #ffffff !important;
+            position: static !important;
+
+            &--Toolbar {
+                display: flex;
+                justify-content: space-between;
+
+                &__section {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            &--Hamburger {
+                margin-right: 16px;
+            }
+        }
+    }
+    .Main {
+        background-color: aqua;
+        background: url("../../assets/main-section.png");
+        background-repeat: no-repeat;
+        background-size: 100% #{$main_top_size};
+    }
+    .Footer {
+        display: block;
+        flex-grow: 1;
+        width: 100%;
+        background-color: rgba(134, 142, 150, 0.1);
+        // align-items: flex-end;
+        margin-top: 16px;
+
+        &__section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            margin-left: 60px;
+            padding: 8px;
+            h4 {
+                padding: 2px;
+                margin-bottom: 5px;
+            }
+            span {
+                padding: 2px;
+                line-height: 1.2em;
+                font-size: 0.875em;
+            }
+        }
+    }
+}

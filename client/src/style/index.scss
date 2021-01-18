@@ -15,5 +15,13 @@ body{
         color: $text-blue;
         @include header;
     }
-
 }
+
+.purple{ color: $purple}
+.blue{ color: $blue}
+.green{ color: $green}
+.yellow{ color: $yellow}
+.orange{ color: $orange}
+.red{ color: $red}
+
+

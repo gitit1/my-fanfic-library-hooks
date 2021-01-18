@@ -1,7 +1,24 @@
 @import "./_fonts.scss";
 @import "./_colors.scss";
 
-@mixin header{
-    font-family: 'SF-Pro-Display-Bold';
+@mixin header {
+    font-family: "SF-Pro-Display-Bold";
     color: $text-blue;
+}
+
+@mixin yellowBtn {
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px #000000;
+    background-color: #ffe817;
+    width: 80px;
+    height: 30px;   
+    text-align: center;
+    cursor: pointer;
+    span {
+        margin-top: 3px;
+        font-size: 0.875em;
+        color: #000000;
+        display: inline-block;
+        font-weight: 500;
+    }
 }

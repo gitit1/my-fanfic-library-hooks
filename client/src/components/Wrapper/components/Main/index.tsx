@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Main.scss'
-
 type MainProps = {
     children: any,
 };

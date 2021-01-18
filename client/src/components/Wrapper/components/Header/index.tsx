@@ -9,8 +9,6 @@ import DesktopNav from './components/DesktopNav';
 import MobileNav from './components/MobileNav';
 import LeftIcons from './components/LeftIcons';
 
-import './Header.scss';
-
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

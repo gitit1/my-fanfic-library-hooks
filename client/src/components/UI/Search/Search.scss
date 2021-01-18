@@ -1,0 +1,30 @@
+
+@import '../../../style/colors';
+@import '../../../style/varibles';
+
+.Search{
+    display: inline-block;
+    position: relative;
+    margin-top: 24px;
+    margin-left: -4px;
+    
+    input{
+        outline: none;
+        border-radius: 20px;
+        height: 40px;
+        width: 385px;
+        right: 5px;
+        padding-left: 15px;
+        border: 1px solid $text-grey;
+        &:focus{
+            border-color: #ffe817;
+        }
+    }
+    div{
+        display: inline-block;
+        position: absolute;
+        right: 8px;
+        margin-top: 8px;
+        @include yellowBtn;
+    }
+}
