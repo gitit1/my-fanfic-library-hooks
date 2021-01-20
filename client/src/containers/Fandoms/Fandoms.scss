@@ -1,0 +1,101 @@
+@import "../../style/sizes";
+@import "../../style/colors";
+
+.Fandoms {
+    &__SearchSection {
+        min-height: $main_top_size;
+        &--header {
+            text-align: center;
+            padding-top: 24px;
+            margin-bottom: 16px;
+        }
+        &--description {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+            .marginDown {
+                margin-bottom: 8px;
+            }
+            span {
+                color: $purple;
+            }
+        }
+        &--SearchContainer {
+            margin: 0 auto;
+            width: 85%;
+            &__Search {
+                text-align: center;
+                margin-bottom: 8px;
+            }
+            &__FiltersBox {
+                display: flex;
+                justify-content: space-between;
+
+                // text-align: center;
+                &--Section {
+                    margin: 0 auto;
+
+                    &.CheckboxContainer{
+                        margin-top: -8px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .Checkbox{
+                            width: 100%;
+                            display: flex !important;
+                            flex-direction: row !important;
+                            align-items: center;
+                            margin:0 auto !important;
+                            text-align: center;
+                        }
+                    }
+                    &.RadioContainer {
+                        display: flex;
+                        flex-direction: column;
+                        .MuiFormGroup-root{
+                            display: inline-flex;
+                            flex-direction: row!important;
+                        }
+                        .MuiRadio-root{
+                            color: $blue!important;
+                        }
+                    }
+                    &.selectContainer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .select,
+                        .selectYears {
+                            margin-top: -8px !important;
+                            margin-bottom: 8px !important;
+                            .MuiInputBase-root {
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+                .helpIcon {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+    &__Results-Section{
+        h2{
+            margin-top: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        &--Fandoms{
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            .Fandom-Box{
+                flex: 1 1 25%;
+                // padding: 3px;
+                margin-left: 8px;
+            }
+        }
+    }
+}

@@ -22,25 +22,25 @@ const ICONS_BOX_DATA = [
     }
 ]
 
-const MiddleSection = () => {
+const DescriptionSection = () => {
     return (
-        <section className="Index__MiddleSection">
-            <div className="Index__MiddleSection--TextArea">
-                <h2 className="Index__MiddleSection--TextArea__Header">What is that about?</h2>
-                <p className="Index__MiddleSection--TextArea--Description">Shipping the Rainbow (originally My Fanfics Library) was first built as a way to order my favorite fanfics fandoms to one place (from both AO3 and FF)
+        <section className="Index__DescriptionSection">
+            <div className="Index__DescriptionSection--TextArea">
+                <h2 className="Index__DescriptionSection--TextArea__Header">What is that about?</h2>
+                <p className="Index__DescriptionSection--TextArea--Description">Shipping the Rainbow (originally My Fanfics Library) was first built as a way to order my favorite fanfics fandoms to one place (from both AO3 and FF)
                 and to give me the ability to mark them (as read, favorite reading list...) and save them.
                     later on I wanted to expend it to not only store the fanfics but to also be able to rewatch the videos of the fandoms.</p>
             </div>
-            <div className="Index__MiddleSection--IconsArea">
+            <div className="Index__DescriptionSection--IconsArea">
             {
                 ICONS_BOX_DATA.map(box => {
                     return (
-                            <div className="Index__MiddleSection--IconsArea__box" key={box.headetTitle}>
-                                <div className="Index__MiddleSection--IconsArea__box--header">
+                            <div className="Index__DescriptionSection--IconsArea__box" key={box.headetTitle}>
+                                <div className="Index__DescriptionSection--IconsArea__box--header">
                                     <img src={box.headerIcon} alt="" />
                                     <h4>{box.headetTitle}</h4>
                                 </div>
-                                <div className="Index__MiddleSection--IconsArea__box--description">
+                                <div className="Index__DescriptionSection--IconsArea__box--description">
                                     <p>{box.description}</p>
                                 </div>
                             </div>
@@ -52,4 +52,4 @@ const MiddleSection = () => {
     )
 }
 
-export default MiddleSection
+export default DescriptionSection

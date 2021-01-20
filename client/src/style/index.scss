@@ -1,6 +1,7 @@
-@import "./_fonts.scss";
-@import "./_colors.scss";
-@import "./_varibles.scss";
+@import './colors';
+@import './fonts';
+@import './sizes';
+@import './varibles';
 
 * {
     margin: 0;
@@ -15,13 +16,35 @@ body{
         color: $text-blue;
         @include header;
     }
+    h1{
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+    p{
+        font-size: 1em;
+        line-height: 1.6em;
+    }
 }
 
-.purple{ color: $purple}
-.blue{ color: $blue}
-.green{ color: $green}
-.yellow{ color: $yellow}
-.orange{ color: $orange}
-.red{ color: $red}
+.purple{ color: $purple!important}
+.blue{ color: $blue!important}
+.green{ color: $green!important}
+.yellow{ color: $yellow!important}
+.orange{ color: $orange!important}
+.red{ color: $red!important}
 
+.mainBackgroundClean{
+    background: url("../assets/main-section-clean.png");
+    background-repeat: no-repeat;
+    background-size: 100% #{$main_top_size};    
+}
+.mainBackgroundWithRainBow{
+    background: url("../assets/main-section-with-rainbow.png");
+    background-repeat: no-repeat;
+    background-size: 100% #{$main_top_size};   
+}
 
+.boldParagraph{
+    font-weight: 700;
+    color: $red;
+}

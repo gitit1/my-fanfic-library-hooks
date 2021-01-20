@@ -4,15 +4,15 @@
 .Index{
     line-height: 1.6em;
 
-    &__FirstSection {
+    &__IntruductionSection {
         width: 50%;
-        padding: 5%;
+        padding: 26px;
         &--Headline {
             margin-bottom: 16px;
         }
     }
-    &__MiddleSection,
-    &__LastSection{
+    &__DescriptionSection,
+    &__OurFandomsSection{
         padding: 5%;
         width: 90%;
         display: flex;
@@ -22,14 +22,9 @@
             &__Header {
                 margin-bottom: 24px;
             }
-            &__Description{
-                font-size: 1em;
-                display: inline-flex;
-                line-height: 1.6em;
-            }
         }
     }
-    &__MiddleSection {
+    &__DescriptionSection {
         &--TextArea {
             margin-top: 72px;
             
@@ -61,7 +56,7 @@
             }
         }
     }
-    &__LastSection{
+    &__OurFandomsSection{
         &--Fandoms-Carousel{
             margin: 0 auto;
             margin-top: 32px;

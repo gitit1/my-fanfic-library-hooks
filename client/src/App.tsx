@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
-import Index from './containers/Index';
 import Wrapper from './components/Wrapper';
+import Index from './containers/Index';
+import Fandoms from './containers/Fandoms';
 
 const App: React.FC = () => {
 
@@ -9,6 +10,7 @@ const App: React.FC = () => {
     <Wrapper>
       <Switch>
         <Route exact path="/" component={Index} />
+        <Route exact path="/fandoms" component={Fandoms} />
         <Redirect to="/" />
       </Switch>
     </Wrapper>

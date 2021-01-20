@@ -1,18 +1,17 @@
 import React from 'react';
 
-import FirstSection from './containers/FirstSection'
-import MiddleSection from './containers/MiddleSection'
-import LastSection from './containers/LastSection'
+import IntruductionSection from './containers/IntruductionSection';
+import DescriptionSection from './containers/DescriptionSection';
+import OurFandomsSection from './containers/OurFandomsSection';
 
 import './Index.scss'
 
 const Index = () => {
     return (
-        <div className="Index">
-            <FirstSection />
-            <MiddleSection />
-            <LastSection />
-
+        <div className="Index mainBackgroundWithRainBow">
+            <IntruductionSection />
+            <DescriptionSection />
+            <OurFandomsSection />
         </div>
     )
 }

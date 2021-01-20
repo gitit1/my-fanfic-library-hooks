@@ -5,7 +5,8 @@ import './Search.scss';
 
 type SearchProps = {
     className: string,
-    placeholder: string
+    placeholder: string,
+    onclick: (...vars: any) => void;
 };
 
 const Search: React.FC<SearchProps> = props => {
@@ -17,8 +18,8 @@ const Search: React.FC<SearchProps> = props => {
     return (
         <div className={classes}>
             <input type="text" placeholder={props.placeholder} />
-            <div onClick={() => alert('test')}>
-                <span>Search</span>
+            <div onClick={() => props.onclick()}>
+                    <span>Search</span>
             </div>
         </div>
     )

@@ -1,11 +1,18 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
 
-const Logo = () => {
+type LogoProps = {
+    className: string,
+};
+
+const Logo: React.FC<LogoProps> = props => {
     return (
-        <Typography variant="h6" noWrap>
-            Shippping The Rainbow
-        </Typography>
+        <div className={props.className}>
+            <Typography variant="h6" noWrap>
+                <Link to="/">Shippping The Rainbow</Link>
+            </Typography>
+        </div>
     )
 }
 

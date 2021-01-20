@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
     MobileNav: {
       display: 'none',
       [theme.breakpoints.up('md')]: {
-        display: 'div',
+        display: 'block',
       },
     },
     sectionDesktop: {
@@ -59,7 +59,7 @@ const Header= () => {
         <Toolbar className="Header__Container--Toolbar">
           <div className="Header__Container--Toolbar__section">
             <Hamburger className={classes.sectionMobile} drawerHandler={drawerHandler} />
-            <Logo />
+            <Logo  className="Header__Container--Toolbar__section--Logo"/>
           </div>
           <div className="Header__Container--Toolbar__section">
             <DesktopNav navItems={NAV_ITEMS} className={classes.sectionDesktop} />
